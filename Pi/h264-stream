@@ -1,0 +1,2 @@
+raspivid -n -pf low -t 0 -b 2500000 -w 800 -h 600 -ih -fps 20 -o - | netcat -lkv4 2222 > /dev/null 2>&1
+
